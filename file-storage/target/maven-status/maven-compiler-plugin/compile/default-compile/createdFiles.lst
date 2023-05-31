@@ -1,0 +1,8 @@
+com\example\file\storage\impl\FileStorageImpl.class
+com\example\file\storage\provider\FileStorageProviderImpl.class
+com\example\file\storage\model\FileMetaData.class
+com\example\file\storage\provider\FailStorageRetriever.class
+com\example\file\storage\spi\FileStorageProvider.class
+com\example\file\storage\impl\FileStorage.class
+com\example\file\storage\util\FileUtil.class
+com\example\file\storage\handler\PropertiesHandler.class

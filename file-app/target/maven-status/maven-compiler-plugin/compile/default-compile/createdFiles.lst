@@ -1,0 +1,7 @@
+com\company\file\actions\app\servlet\FileRetrieveAllServlet.class
+com\company\file\actions\app\server\JettyServer.class
+com\company\file\actions\app\servlet\FileDownloadServlet.class
+com\company\Main.class
+com\company\file\actions\app\servlet\FileUploadServlet.class
+com\company\file\actions\app\convert\FileMetaDataConverter.class
+com\company\file\actions\app\validator\FileValidator.class
