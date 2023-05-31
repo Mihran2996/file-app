@@ -41,7 +41,7 @@ public class FileStorageImpl implements FileStorage {
 
     @Override
     public String downloadById(Long id) throws FileNotFoundException {
-        File[] files = createFileWithSysytemPath();
+        File[] files = createFileWithSystemPath();
 
         if (files == null) {
             FileNotFoundException exception = new FileNotFoundException("Directory does not exist or is not accessible");
@@ -58,7 +58,7 @@ public class FileStorageImpl implements FileStorage {
 
     @Override
     public List<FileMetaData> retrieveAll() {
-        File[] files = createFileWithSysytemPath();
+        File[] files = createFileWithSystemPath();
 
         List<FileMetaData> fileMetaData = files == null ? List.of() : Arrays.stream(files)
                 .filter(File::isFile)
@@ -72,7 +72,7 @@ public class FileStorageImpl implements FileStorage {
         return System.getProperty("user.home");
     }
 
-    private File[] createFileWithSysytemPath() {
+    private File[] createFileWithSystemPath() {
         File directory = new File(systemPath);
         File[] files = directory.listFiles();
         return files;
